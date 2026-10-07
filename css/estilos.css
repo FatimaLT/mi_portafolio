@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-fondo: #f8fafc;
+  --color-tarjeta: #ffffff;
+  --color-texto: #1e293b;
+  --color-secundario: #475569;
+  --color-borde: #e2e8f0;
+  --color-acento: #2563eb;
+}
+
+.dark {
+  --color-fondo: #0f172a;
+  --color-tarjeta: #1e293b;
+  --color-texto: #f8fafc;
+  --color-secundario: #94a3b8;
+  --color-borde: #334155;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+section {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3 {
+  color: var(--color-texto);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--color-secundario);
+  margin-bottom: 0.8rem;
+}
+
+#habilidades ul {
+  list-style: none;
+}
+
+#habilidades li {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+#habilidades li strong {
+  color: var(--color-acento);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal y académico de Faty, Desarrollador FullStack.">
+    <title>Mi Portafolio - Faty</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Skip link para Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <div class="nav-container">
+            <button id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+            <nav id="nav-menu" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <button id="dark-mode-toggle" aria-label="Cambiar modo oscuro/claro">🌙</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="inicio">
+            <h1>Mi Portafolio</h1>
+            <p id="mensaje-bienvenida">¡Hola! Te doy la bienvenida a mi portafolio 👋 Soy estudiante de Computación en formación, apasionada por la tecnología, el desarrollo web y por aprender algo nuevo cada día.</p>        
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Actualmente estoy cursando la carrera de Computación, donde paso la mayor parte de mi tiempo explorando cómo funciona el software y creando mis primeras aplicaciones. Me motiva mucho entender las buenas prácticas del desarrollo web, resolver problemas a través del código y llevar lo aprendido en clase a proyectos reales.
+            </p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Proyecto de programación</h3>
+                <p>
+                En esta sección reúno las prácticas, laboratorios y proyectos personales que he desarrollado durante mi formación académica. Cada uno representa un reto donde apliqué nuevos conceptos de maquetación, lógica de programación y diseño web.
+                Proyecto 1: Portafolio Web Accesible
+                Un sitio web desarrollado desde cero aplicando HTML5 semántico, CSS3 moderno (variables y responsive) y JavaScript. Enfocado en obtener 100% en auditorías de rendimiento y accesibilidad (Lighthouse).
+                </p>
+            </article>
+        </section>
+
+      <section id="habilidades">
+    <h2>Habilidades y lo que me apasiona</h2>
+    <p>Me apasiona el desarrollo web, crear interfaces accesibles y explorar constantemente nuevas tecnologías (HTML, CSS y JavaScript) mientras me formo en la carrera.</p>
+    <ul>
+        <li><strong>Investigación:</strong> Capacidad para consultar documentación técnica y aprender de forma autónoma.</li>
+        <li><strong>Hablar en público:</strong> Habilidad para estructurar ideas y exponer temas en presentaciones académicas.</li>
+        <li><strong>Trabajo académico:</strong> Organización, responsabilidad y colaboración en proyectos y entregas grupales.</li>
+    </ul>
+</section>
+
+        <aside id="extras">
+            <h3>Información Adicional</h3>
+            <p>Creo firmemente que la mejor forma de aprender programación es construyendo. Estoy en constante aprendizaje, siempre buscando mejorar la calidad de mi código y abierta a recibir retroalimentación para seguir creciendo como futura desarrolladora.</p>
+        </aside>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form id="form-contacto" action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje-texto">Mensaje:</label>
+                <textarea id="mensaje-texto" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-feedback" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi Portafolio &copy; 2026</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
